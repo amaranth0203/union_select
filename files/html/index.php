@@ -2,7 +2,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>easy_sql</title>
+    <title>union select</title>
 </head>
 
 <body>
@@ -39,8 +39,9 @@ if(isset($_GET['inject'])) {
         echo "We could not find a match for ID $id, sorry about that. Please try again.";
         exit;
     }
-    echo "var_dump(\$mysqli->query($sql))):";
-    var_dump($result);
+    
+    echo "var_dump(\$mysqli->query(\$sql)->fetch_assoc()):<br><hr>";
+    var_dump($result->fetch_assoc());
     echo "<br>";
 
 //    $res = $mysqli->multi_query($sql);
