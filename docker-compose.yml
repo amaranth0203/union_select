@@ -4,7 +4,7 @@ services:
 
   web:
     build: .
-    image: ctftraining/qwb_2019_supersqli
+    image: amaranth0203/union_select
     restart: always
     ports:
       - "127.0.0.1:8302:80"
