@@ -1,6 +1,6 @@
-CREATE DATABASE IF NOT EXISTS supersqli;
+CREATE DATABASE IF NOT EXISTS gxxd;
 
-USE supersqli;
+USE gxxd;
 
 CREATE TABLE IF NOT EXISTS `words` (
   `id` int(10) NOT NULL,
