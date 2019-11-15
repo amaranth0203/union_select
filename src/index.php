@@ -26,7 +26,7 @@ if(isset($_GET['inject'])) {
     $id = $_GET['inject'];
 //    waf1($id);
 //    waf2($id);
-    $mysqli = new mysqli("127.0.0.1","root","root","supersqli");
+    $mysqli = new mysqli("127.0.0.1","root","root","ctftraining");
     //多条sql语句
     $sql = "select * from `words` where id = '$id';";
 
